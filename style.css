@@ -1,0 +1,114 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Slider styles */
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 400px; /* Adjust height as needed */
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  flex: 0 0 100%;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.read-more {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: #007bff;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.read-more:hover {
+  background-color: #0056b3;
+}
+
+.navigation-dots {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #bbb;
+  border-radius: 50%;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+/* Project section styles */
+#our-project {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px; /* Adjust spacing */
+}
+
+.project-content {
+  flex: 1;
+}
+
+.content-item {
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  transition: background-color 0.3s;
+}
+
+.content-item:hover {
+  background-color: #f0f0f0;
+  border-color: #007bff; /* Blue border color on hover */
+  color: #007bff; /* Blue text color on hover */
+}
+
+.project-image img {
+  max-width: 100%;
+  height: auto;
+}

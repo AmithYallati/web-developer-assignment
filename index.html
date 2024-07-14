@@ -5,6 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Slider and Project Section</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Additional CSS styles */
+    .project-image {
+      max-width: 100%; /* Ensure the project image container does not exceed its parent width */
+      overflow: hidden; /* Hide any overflow to prevent layout issues */
+    }
+    .project-image img {
+      display: block; /* Ensure image is displayed as block element */
+      max-width: 100%; /* Make sure image does not exceed its container width */
+      height: auto; /* Maintain aspect ratio */
+    }
+  </style>
 </head>
 <body>
 
@@ -29,19 +41,19 @@
 <div class="slider-container">
   <div class="slider">
     <div class="slide">
-      <img src="images/Screen_Shot_2021-08-10_at_7.16.53_PM.png" alt="Image 1">
+      <img src="https://github.com/AmithYallati/web-developer-assignment/blob/main/Screen_Shot_2021-08-10_at_7.16.53_PM.png?raw=true" alt="Image 1">
       <div class="overlay">
         <a href="https://fylehq.com" target="_blank" class="read-more">Read more</a>
       </div>
     </div>
     <div class="slide">
-      <img src="images/Screen_Shot_2021-08-10_at_7.22.26_PM.png" alt="Image 2">
+      <img src="https://github.com/AmithYallati/web-developer-assignment/blob/main/Screen_Shot_2021-08-10_at_7.22.26_PM.png?raw=true" alt="Image 2">
       <div class="overlay">
         <a href="https://fylehq.com" target="_blank" class="read-more">Read more</a>
       </div>
     </div>
     <div class="slide">
-      <img src="images/Screen_Shot_2021-08-10_at_7.24.07_PM.png" alt="Image 3">
+      <img src="https://github.com/AmithYallati/web-developer-assignment/blob/main/Screen_Shot_2021-08-10_at_7.24.07_PM.png?raw=true" alt="Image 3">
       <div class="overlay">
         <a href="https://fylehq.com" target="_blank" class="read-more">Read more</a>
       </div>
@@ -56,12 +68,12 @@
 
 <div id="our-project">
   <div class="project-content">
-    <div class="content-item" onclick="changeImage('images/Screen_Shot_2021-08-10_at_7.16.53_PM.png')">Content 1</div>
-    <div class="content-item" onclick="changeImage('images/Screen_Shot_2021-08-10_at_7.22.26_PM.png')">Content 2</div>
-    <div class="content-item" onclick="changeImage('images/Screen_Shot_2021-08-10_at_7.24.07_PM.png')">Content 3</div>
+    <div class="content-item" onclick="changeImage('https://github.com/AmithYallati/web-developer-assignment/blob/main/Screen_Shot_2021-08-10_at_7.16.53_PM.png?raw=true')">Content 1</div>
+    <div class="content-item" onclick="changeImage('https://github.com/AmithYallati/web-developer-assignment/blob/main/Screen_Shot_2021-08-10_at_7.22.26_PM.png?raw=true')">Content 2</div>
+    <div class="content-item" onclick="changeImage('https://github.com/AmithYallati/web-developer-assignment/blob/main/Screen_Shot_2021-08-10_at_7.24.07_PM.png?raw=true')">Content 3</div>
   </div>
   <div class="project-image">
-    <img id="project-img" src="images/Screen_Shot_2021-08-10_at_7.16.53_PM.png" alt="Project Image">
+    <img id="project-img" src="https://github.com/AmithYallati/web-developer-assignment/blob/main/Screen_Shot_2021-08-10_at_7.22.26_PM.png?raw=true" alt="Project Image">
   </div>
 </div>
 
